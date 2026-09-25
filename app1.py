@@ -1,8 +1,21 @@
 from flask import Flask
-import os
-app = Flask(__name__)
+
+app = Flask(_name_)
+
 @app.route("/")
 def home():
-  return "<h1>Welcome to Rendor</h1><p>cloud computing test</p>"
-  if__name__ == "__main__":
-  app.run(host="0.0.0.0", port int(os.environ.get("PORT",10000)))
+    return """
+    <html>
+    <head>
+        <title>My PaaS Application</title>
+    </head>
+    <body>
+        <h1>Hello from Render!</h1>
+        <h2>My First PaaS Web Application</h2>
+        <p>Created using Python and Flask.</p>
+    </body>
+    </html>
+    """
+
+if _name_ == "_main_":
+    app.run()
